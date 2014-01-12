@@ -5,7 +5,6 @@ import javax.swing.SwingUtilities;
 import mvc.controller.Controller;
 import mvc.model.Model;
 import mvc.view.View;
-import mvc.view.ViewActionListener;
 
 public class Application {
 
@@ -22,7 +21,7 @@ public class Application {
 	
 	public static void runApp(){
 		Model model = new Model();
-		ViewActionListener view = new ViewActionListener(model);
+		View view = new View(model);
 		
 		Controller controller = new Controller(model, view);
 		

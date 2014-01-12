@@ -4,14 +4,13 @@ import mvc.model.Model;
 import mvc.view.LoginFormEvent;
 import mvc.view.LoginListener;
 import mvc.view.View;
-import mvc.view.ViewActionListener;
 
 public class Controller implements LoginListener {
 
 	private Model model;
-	private ViewActionListener view;
+	private View view;
 	
-	public Controller(Model model, ViewActionListener view){
+	public Controller(Model model, View view){
 		this.model = model;
 		this.view = view;
 	}
