@@ -25,5 +25,7 @@ public class Application {
 		ViewActionListener view = new ViewActionListener(model);
 		
 		Controller controller = new Controller(model, view);
+		
+		view.setLoginListener(controller);
 	}
 }
